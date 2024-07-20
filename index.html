@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Indígena</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .circle-images-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .circle-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+            flex: 1 1 calc(33% - 40px);
+            margin: 20px;
+        }
+
+        .circle-image-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .circle-image-container p {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .circle-images-section {
+                flex-direction: column;
+            }
+
+            .circle-image-container img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .circle-image-container img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .article {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .article img {
+            max-width: 200px;
+            height: auto;
+            transition: transform 0.3s ease;
+            margin-right: 20px;
+        }
+
+        .text-content {
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .article {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .article img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+
+            .text-content {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/picture.webp" alt="Logo Cultura Indígena">
+            </div>
+            <h1>RAICES VIVAS DE CAYAMBE</h1>
+            <ul>
+                <li><button id="toggle-dark-mode">Modo Oscuro</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="circle-images-section">
+            <div class="circle-image-container">
+                <img src="img/Imagen2.jpg" alt="Imagen 1">
+                <p>Vivencias de nuestros ancestros</p>
+            </div>
+            <div class="circle-image-container">
+                <img src="img/Imagen3.jpg" alt="Imagen 2">
+                <p>Conocer el porqué de las tradiciones,</p>
+                <p>vestimenta e idioma de nuestras parroquias y comunidades</p>
+            </div>
+            <div class="circle-image-container">
+                <img src="img/Imagen4.jpg" alt="Imagen 3">
+                <p>Fomento y dinamización de jornadas culturales con los jóvenes.</p>
+            </div>
+        </section>
+
+        <section class="article">
+            <img src="img/Imagen9.jpg" alt="Imagen de Cultura Indígena" class="animated-image">
+            <div class="text-content">
+                <h2>¿QUÉ ES LA IDENTIDAD CULTURAL?</h2>
+                <p>La identidad cultural es un conjunto de valores, tradiciones, símbolos, creencias y modos de comportamiento que funcionan como elemento de relación dentro de un grupo social y actúan como esencia para que los individuos que lo forman y puedan fundamentar su sentimiento de pertenencia.</p>
+                <p>Una de las principales festividades que se celebran, son las fiestas de San Pedro, nombrada patrimonio inmaterial Nacional denominado también como las Fiestas del Sol en la Mitad del Mundo, es reconocida por sus tradiciones y expresiones orales. Las coplas y vestimentas coloridas engalanan estas celebraciones.</p>
+            </div>
+        </section>
+
+        <section class="article">
+            <img src="img/Imagen5.jpg" alt="Imagen de Cultura Indígena" class="animated-image">
+            <div class="text-content">
+                <h2>IDENTIDAD CULTURAL KAYAMBI</h2>
+                <p>La identidad cultural de los pueblos indígenas constituye patrimonio de la humanidad, dado que identifica a cada uno de los pueblos por sus diferentes características, costumbres, tradiciones, creencias, que son propios de cada pueblo. Así el pueblo Kayambi al tener sus propias costumbres y tradiciones con la práctica permanente de antiguos rituales y celebraciones se enriquecen de saberes y conocimientos ancestrales.</p>
+            </div>
+        </section>
+
+        <section class="article">
+            <img src="img/Imagen6.jpg" alt="Imagen de Tradiciones Indígenas" class="animated-image">
+            <div class="text-content">
+                <h2>CAUSA DE LA PERDIDA DE IDENTIDAD </h2>
+                <p>Por vergüenza de nuestros orígenes</p>
+                <p>* Discriminación en la sociedad</p>
+                <p>* La globalización, tecnología.</p>
+                <p>* Hemos adoptado o de alguna forma sustituido nuestras tradiciones por otras de otros países que no nos pertenecen.</p>
+                <p>“No hay que imitar otras culturas, sino ser auténticas con la nuestra”.</p>
+            </div>
+        </section>
+
+        <section class="article">
+            <img src="img/Imagen7.jpg" alt="Imagen de Artesanía Indígena" class="animated-image">
+            <div class="text-content">
+                <h2>Prácticas productivas</h2>
+                <p>Podemos decir que este pueblo es eminentemente agrícola, sus principales actividades productivas están relacionadas a la agricultura, la ganadería, la producción de derivados de leche y a la elaboración de productos artesanales. En relación a la producción agrícola, este pueblo combina una producción artesanal dirigida al consumo propio, con la producción intensiva dirigida al mercado. Su producción es diversa, pues su población se asienta en distintos pisos ecológicos.</p>
+            </div>
+        </section>
+
+        <section class="article">
+            <img src="img/Imagen8.jpg" alt="Imagen de Cultura Indígena" class="animated-image">
+            <div class="text-content">
+                <h2>Prácticas medicinales</h2>
+                <p>En el pueblo Kayambi se práctica la medina natural y también se consume la medicina alopática. Existen los Yachag, parteras, fregadores en todas las comunidades que forman este pueblo. Utilizan conocimientos adquiridos por medio de la transmisión oral, que dicen de las propiedades curativas de las plantas, de la tierra, las piedras y el agua; con todos estos elementos curan. Además la mayoría del pueblo conoce las bondades curativas que se encuentra en sus chacras, con ellas se curan enfermedades leves, cuando alguna enfermedad resulta muy grave o crónica acuden al medico alopático para sanar.</p>
+            </div>
+        </section>
+
+        <section class="article">
+            <img src="img/portada.jpeg" alt="Imagen de Cultura Indígena" class="animated-image">
+            <div class="text-content">
+                <h2>¿CÓMO PODEMOS FORTALECER LA IDENTIDAD CULTURAL?</h2>
+                <p>Para fortalecer la identidad cultural de nuestro pueblo realmente es un proceso complejo que involucra acciones tanto individuales como colectivas. Educación y concienciación, valorización de las lenguas y tradiciones, promoción de las artes y la cultura, fomento del turismo sostenible, inclusión y participación, investigación y documentación, diálogo intercultural, legislación y políticas culturales.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Diario de la Cultura Indígena</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.animated-image');
+            const toggleButton = document.getElementById('toggle-dark-mode');
+            const body = document.body;
+
+            images.forEach(image => {
+                image.addEventListener('mouseover', () => {
+                    image.style.transform = 'scale(1.1)';
+                });
+
+                image.addEventListener('mouseout', () => {
+                    image.style.transform = 'scale(1)';
+                });
+            });
+
+            toggleButton.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</body>
+</html>
